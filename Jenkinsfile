@@ -24,7 +24,7 @@ pipeline{
         stage('Deploy') {
             steps {
                 sh '''
-                oc project deyevr-greetings
+                oc project moyuqh-greetings
                 oc start-build greeting-service --follow --wait
                 '''
             }
