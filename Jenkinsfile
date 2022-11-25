@@ -24,7 +24,7 @@ pipeline{
         stage('Deploy') {
             steps {
                 sh '''
-                oc project libnrr-greetings
+                oc project tiapbp-greetings
                 oc start-build greeting-service --follow --wait
                 '''
             }
